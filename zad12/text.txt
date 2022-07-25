@@ -1,0 +1,6 @@
+gcc main.c -lm -D COUNT=10 -D MIN=-20 -D MAX=20 -E -o main.i  -> preprocessing
+gcc main.i -S -o main.s  -> kompilira se do assebly
+gcc main.s -c -o main.o  -> kompilira se do mashinen kod
+gcc main.o -L ./ -l comparators -o static.out  ->  linkva se ot linker-a
+
+izpolzvanite komandi za library-tata sa v makefile-a
